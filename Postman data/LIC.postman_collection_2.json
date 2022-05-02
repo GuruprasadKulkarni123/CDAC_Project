@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "fa49b33f-e320-4168-93ff-b0871b07fe52",
+		"name": "LIC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "sign up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"dinesh\",\r\n    \"lastName\": \"chavan\",\r\n    \"address\": \"Pune\",\r\n    \"contact\": \"6952456254\",\r\n    \"email\": \"dinesh@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"age\": 25,\r\n    \"birthDate\": \"1995-04-29\",\r\n    \"role\": \"agent\",\r\n    \"gender\": \"Male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/user/signup",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"dinesh@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/user/signin",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\": \"Mumbai\",\r\n    \"contact\": \"8999424255\",\r\n    \"email\": \"dinu@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/editprofile/39",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"editprofile",
+								"39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/deleteuser/22",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deleteuser",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/userprofile/25",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userprofile",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all client list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/getallclients",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"getallclients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"guruprasadkulkarni6789@gmail.com\",\r\n    \"password\": \"guru12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/forgotpassword/20",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"forgotpassword",
+								"20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "policy",
+			"item": [
+				{
+					"name": "getAllPolicies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/policydetails",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"policydetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new policy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sumAssured\":\"250000\",\r\n    \"policyName\": \"LIC's Cancer Yojana\",\r\n    \"type\": \"Health\",\r\n    \"installmentsNo\": 10,\r\n    \"premiumAmount\": \"5585\",\r\n    \"info\": \"bharat sarkar cancer seva\",\r\n    \"noOfyears\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/addpolicy",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"addpolicy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Policy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/deletepolicy/3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deletepolicy",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "buyer",
+			"item": [
+				{
+					"name": "buy policy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 26,\r\n    \"policyId\": 2,\r\n    \"maturityDate\":\"2050-02-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/buypolicy",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"buypolicy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user policies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/getuserpolicies/26",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"getuserpolicies",
+								"26"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Complaints",
+			"item": [
+				{
+					"name": "register complaint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cusFirstName\": \"guru\",\r\n    \"cusLastName\": \"kulkarni\",\r\n    \"email\": \"guru@gmail.com\",\r\n    \"details\": \"agent not communicating well\",\r\n    \"status\": \"pending\",\r\n    \"type\": \"agent\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/registercomplaint/6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"registercomplaint",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all complaints",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/getallcomplaints",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"getallcomplaints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete complaint",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/deletecomplaint/5",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deletecomplaint",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get perticular client complaint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/getusercomplaint/26",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"getusercomplaint",
+								"26"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Claim",
+			"item": [
+				{
+					"name": "post claim",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"policyNum\": 100000,\r\n    \"userId\": 38\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/registerclaim",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"registerclaim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get claims",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/getallclaim",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"getallclaim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete claim",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/deleteclaim/4",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deleteclaim",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get client claim",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/getuserclaim/26",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"getuserclaim",
+								"26"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:8080",
+			"type": "default"
+		}
+	]
+}

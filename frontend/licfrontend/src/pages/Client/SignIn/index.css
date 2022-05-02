@@ -1,0 +1,19 @@
+h1.title {
+    text-align: center;
+  }
+
+#card1.card{
+      top: 20px;
+      right: 15px;
+      max-height: 500px;
+      max-width: 500px;
+      background-color: lightgray;
+      grid-row: 2/3;
+      grid-column: 3/3;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: 1fr 6fr 1fr;
+      border-radius: 2%;
+
+  }
+  
